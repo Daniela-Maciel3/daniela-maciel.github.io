@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../icones/mail.png">
+    <link rel="stylesheet" href="css">
+    <title>Currículo: Daniela Romão Maciel</title>
+</head>
+<body>
+    <div>
+        <h1>Daniela Romão Maciel</h1>
+        <img src="Curriculo/imagem/perfil_1.jpeg" alt="Foto de Daniela"  width="250" height="300">
+        <p>Desenvolvedora Web Front-End</p>
+    </div>
+    <section class="contato">
+        <h2>Contato:</h2>
+        <ul>
+            <li><img src="Curriculo/icones/phone_black.svg" alt="Telefone" width="20" height="20">  
+             <strong> Telefone:</strong> (92) 98123-6564</li>
+            <li><img src="Curriculo/icones/mail_black.svg" alt="Email" width="25" height="25">
+            <strong>Email:</strong> danielamaciel@alunos.utfpr.edu.br</li>
+            <li><img src="Curriculo/icones/pc_black.svg" alt="Linkedin" width="25" height="25">
+            <strong>Linkedin:</strong> <a href="#">www.linkedin.com/in/danielarmaciel</a></li>
+            <li><img src="Curriculo/icones/pc_black.svg" alt="GitHub" width="25" height="25">
+            <strong>GitHub:</strong><a href="#">https://github.com/Daniela-Maciel3</a></li>
+        
+        </ul>
+    </section>
+    <section class="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>C</li>
+      <li>Python</li>
+      <li>Apache Netbeans</li>
+      <li>MySQL</li>
+      <li>Astah</li>
+    </ul>
+    </section>
+    <section class="resumo">
+    <h2>Resumo</h2>
+    <p>Desenvolvedora Front-End com 2 meses de experiência na criação de interfaces. Gosto de criar interfaces acessíveis e busco entregar a melhor qualidade.</p>
+    </section>
+    <h2>ODS que pretendo contribuir: </h2>
+        <figure>
+            <img src="Curriculo/imagem/9.png" alt="ODS 9" width="200" height="200">
+        </figure>
+
+    <section class="experiencia">
+    <h2>Experiência Profissional</h2>
+    <div class="item-experiencia">
+        <h3>Vice-Presidente | Esmatjr</h3>
+            <p class="periodo">jan/2020 - jul/2020</p>
+      <ul>
+        <li>Responsável pela fundação da empresa junior do curso de Engenharia de Materiais (Esmatjr) na Universidade Federal do Amazonas (UFAM)</li>
+        <li>Colaborou com equipes de design e marketing para promover a empresa.</li>
+      </ul>
+    </div>
+    </section>
+   <section class="Educação">
+    <h2>Educação</h2>
+    <div class="item-educacao">
+        <h3>Ensino Fundamental e Médio | Centro Educacional Lato Sensu</h3>
+        <p class="periodo">2002 - 2015</p>
+    </div>
+    <div class="item-educacao">
+        <h3>Graduação | Universidade Tecnológica Federal do Paraná (UTFPR)</h3>
+        <p class="periodo"></p>
+        <ul>
+            <li>Cursando Bacharelado em Engenharia de Software.</li>
+            <li>Participou de projetos acadêmicos relacionados a qualidade de software.</li>
+        </ul>
+    </div>
+
+   </section>
+   
+  <h2>Formulário:</h2>
+    <button id="openModalBtn"> Enviar informações de contato</button>
+    <dialog id="contactModal">
+        <h3>Informações de Contato</h3>
+            <label for="nome">Nome completo: </label><br>
+            <input type="text" id="nome" ><br>
+            <label for="instagram">Link para o Instagram: </label><br>
+            <input type="url" id="instagram"><br>
+            <label for="whatsapp">Número do WhatsApp: </label><br>
+            <input type="tel" id="whatsapp"><br>            
+            <br>
+            <button id="sendBtn">Enviar</button>
+            <button id="closeBtn">Fechar</button>
+    </dialog>
+    <script>
+        const modal = document.getElementById('contactModal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.getElementById('closeBtn');
+
+        openModalBtn.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.close();
+        });
+    </script>
+
+</body>
+</html>
